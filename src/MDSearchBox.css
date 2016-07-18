@@ -1,0 +1,23 @@
+:local .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 300px;
+  border: 1px solid #ccc;
+  background-color: white;
+
+  .searchbox {
+    margin: 10px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    .input {
+      flex-grow: 1;
+      font-size: 15px;
+      margin-left: 10px;
+      border-radius: 0px;
+      border-style: none;
+      outline:none;
+    }
+  }
+}
