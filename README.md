@@ -13,3 +13,6 @@
 * **onChange**: (text) => () - the function fired every time the input text changes.
 * **width**:    number - width of the search box
 * **height**:   number - height of the search box
+
+## Note
+This Component uses FontAwesome icon. So make sure your project has that included.

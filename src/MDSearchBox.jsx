@@ -18,6 +18,7 @@ class MDSearchBox extends Component {
 
   render() {
     const { width, height } = this.props;
+    const inputOptionalProps = !!this.props.text ? { value: this.props.text } : {};
     const style = { width, height };
     return (
       <div className={styles.container} style={style}>
@@ -30,7 +31,7 @@ class MDSearchBox extends Component {
             placeholder="搜索"
             onChange={this.onChange}
             className={styles.input}
-            value={!!this.props.text || null}
+            {...inputOptionalProps}
           />
         </div>
       </div>
