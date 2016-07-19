@@ -8,9 +8,6 @@ import MDSearchBox from 'src/MDSearchBox';
 expect.extend(expectJSX);
 
 describe('MDSearchBox', () => {
-  // it('should work', () => {
-  //
-  // })
   describe('default case', () => {
     let wrapper;
 
@@ -19,11 +16,8 @@ describe('MDSearchBox', () => {
     });
 
     it('should have no input value', () => {
-        wrapper
-        .childAt(0)
-        .childAt(1)
-        .children()
-        .forEach(node => expect(node.type()).toBe(null));
+        const input = wrapper.find('input');
+        expect(input.props().value).toBe(undefined);
     });
 
   });
@@ -79,7 +73,6 @@ describe('MDSearchBox', () => {
     });
 
     it('size should change', () => {
-      // console.log(wrapper.props().style);
       expect(wrapper.props().style).toEqual({width:500, height:300});
 
     });

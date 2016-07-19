@@ -49,8 +49,8 @@ MDSearchBox.propTypes = {
 
 MDSearchBox.defaultProps = {
   text: '',
-  // width: 300,
-  // height: 42,
+  width: 300,
+  height: 42,
 }
 
 export default MDSearchBox;
