@@ -5,6 +5,8 @@ const App = () => (
   <div>
     <MDSearchBox
       onChange={(text) => { console.log(`changed to ${text}`); }}
+      width={300}
+      height={42}
     />
   </div>
 );
