@@ -23,7 +23,7 @@ class MDSearchBox extends Component {
     return (
       <div className={styles.container} style={style}>
         <div className={styles.searchbox}>
-          <span className="fontawesome-search"></span>
+          <span><i className="fa fa-search"></i></span>
           <input
             type="searchbox"
             id="searchbox"
