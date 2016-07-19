@@ -9,7 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
 
-  width: 300px;
+  /*width: 300px;*/
   border: 1px solid #ccc;
   background-color: white;
 }
