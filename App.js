@@ -7,6 +7,8 @@ const App = () => (
   <div className={styles.container}>
     <MDSearchBox
       onChange={(text) => { console.log(`changed to ${text}`); }}
+      width={300}
+      height={42}
     />
   </div>
 );
